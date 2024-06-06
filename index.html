@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Ana Danevska's Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/fbf1336406.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!--------------------------------header -->
@@ -35,10 +36,98 @@
                     <img src="images/image1.jpeg">
                 </div>
                 <div class="about-col-2">
-                    <h1>About Me</h1>
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a driven professional in the field of technology, I want to use my strong background in Computer
+                        Science to work on exciting projects and tackle real-world problems. With a natural aptitude for 
+                        quicklearning and adaptability, I'm dedicated to learning and exploring different opportunities 
+                        in the ever-changing tech world.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>C, Python, Java, JavaScript programming languages</li>
+                            <li><span>General skills</span><br>Written and verbal communication,<br> Teamwork,<br> Attention to detail,<br> Problem solving</li>
+                            <li><span>Languages</span><br>English: Full Professional Proficiency
+                                ,<br> Slovenian: Full Professional Proficiency
+                                ,<br> Macedonian: Native or Bilingual Proficiency,<br>German: Limited Working Proficiency
+                                ,<br>Turkish: Limited Working Proficiency
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>Yahya Kemal College, Skopje, N.Macedonia</li>
+                            <li><span>2020</span><br>University of Ljubljana, Faculty of Computer and Information science</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li><span>LinkedIn cesrtificates</span><br>Cybersecurity Foundations: Security Architecture,<br> Improve Communication Using Lean Thinking,<br> Learning Wi-Fi, Mindsets and Strategies for Negotiation Success,<br> Networking Foundations,<br> Project Management Foundations: Quality,<br> Scrum</li>
+                            <li><span>Other certificates</span><br>Leadership for success,<br>AccessibleEU Slovenia - Best practices for accessibility of websites,
+                                applications and services: How to plan, design, code and prepare
+                                accessible content</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+<!--------------------------------Experience -->
+    <div id="experience">
+        <div class="container">
+            <h1 class="sub-title">Experience</h1>
+            <div class="experience-list">
+                <div>
+                    <i class="fa-solid fa-computer-mouse"></i>
+                    <h2>Customer Service Agent<br> Inplayer, Skopje</h2>
+                    <p>11/2019 - 05/2020</p>
+                    <ul>
+                        <li>Monitored up to 10 live basketball games per hour to eliminate and prevent any technical issues
+                            and glitches.</li>
+                        <li>Insured a tailored service to each customer through Zendesk via email and phone calls.</li>
+                        <li>Advised on how to improve overall team effectiveness, work platform, and customer
+                            satisfaction during weekly meetings.</li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Mobile QA Tester<br> Plume Design, Ljubljana</h2>
+                    <p>08/2022 - 01/2024</p>
+                    <ul>
+                        <li>Conducted comprehensive manual testing and assessed the quality for mobile applications
+                            across iOS and Android platforms, ensuring optimal functionality and usability. Verified API
+                            responses.</li>
+                        <li>Provided detailed analysis, identified and tracked issues to resolution. </li>
+                        <li>Collaborated with cross-functional teams to enhance overall product quality. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
 </body>
 </html>
