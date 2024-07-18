@@ -7,6 +7,11 @@
   <title>Ana Danevska's Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/fbf1336406.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
 <!--------------------------------header -->
@@ -14,13 +19,15 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Computer Science Student</p>
@@ -66,7 +73,7 @@
                     </div>
                     <div class="tab-contents" id="certificates">
                         <ul>
-                            <li><span>LinkedIn cesrtificates</span><br>Cybersecurity Foundations: Security Architecture,<br> Improve Communication Using Lean Thinking,<br> Learning Wi-Fi, Mindsets and Strategies for Negotiation Success,<br> Networking Foundations,<br> Project Management Foundations: Quality,<br> Scrum</li>
+                            <li><span>LinkedIn certificates</span><br>Cybersecurity Foundations: Security Architecture,<br> Improve Communication Using Lean Thinking,<br> Learning Wi-Fi, Mindsets and Strategies for Negotiation Success,<br> Networking Foundations,<br> Project Management Foundations: Quality,<br> Scrum</li>
                             <li><span>Other certificates</span><br>Leadership for success,<br>AccessibleEU Slovenia - Best practices for accessibility of websites,
                                 applications and services: How to plan, design, code and prepare
                                 accessible content</li>
@@ -180,6 +187,19 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
 
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
 
     </script>
 
