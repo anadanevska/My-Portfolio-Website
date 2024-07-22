@@ -10,7 +10,7 @@ Welcome to my project! This repository is the culmination of my journey to creat
 
 ## Introduction
 
-This project began as a way for me to learn and grow as a developer. While I followed a [YouTube tutorial by Tech With Tim](https://www.youtube.com/watch?v=0YFrGy_mzjY), I have adapted and modified the code to better suit my needs and vision. The tutorial provided a fantastic foundation, but I've added my own touches to enhance functionality and aesthetics. Moving forward, I plan to implement more of my own design ideas and unique features to make this project truly my own.
+This project began as a way for me to learn and grow as a developer. While I followed a [YouTube tutorial by Tech With Tim](https://www.youtube.com/watch?v=0YFrGy_mzjY), I have adapted and modified the code to better suit my needs and vision. The tutorial provided a fantastic foundation, but I've added my own touches to enhance functionality and aesthetics. Moving forward, I plan to implement more of my own design ideas and unique features to make this project truly my own. It still needs a little bit of fixing and adding on as well. This is just my first verion!
 
 ## Features
 
